@@ -37,7 +37,7 @@ NSString *const kXMNShareTag = @"com.XMFraker.kXMNShareTag";
     //遍历标签数组,将标签显示在界面上,并给每个标签打上tag加以区分
     for (NSDictionary *shareDic in items) {
         NSUInteger index = [items indexOfObject:shareDic];
-        NSUInteger tag = shareDic[kXMNShareTag] ? [shareDic[kXMNShareTag] integerValue] : index;
+        NSUInteger tag = shareDic[kXMNShareTag] ? [shareDic[kXMNShareTag] integerValue] : (self.tag + index);
         CGRect frame = CGRectMake(kXMNOriginX+index*(kXMNItemWidth+kXMNHorizontalSpace), KXMNOriginY, kXMNItemWidth, kXMNItemWidth+kXMNHorizontalSpace+kXMNTitleFontSize);
         UIView *view = [self _itemWithFrame:frame itemInfo:shareDic tag:tag];
         [self addSubview:view];

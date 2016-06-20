@@ -52,7 +52,8 @@
 #pragma mark - XMNShareScrollViewDelegate
 
 - (void)scrollView:(XMNShareScrollView *)shareScrollView didSelelctedIndex:(NSUInteger)index title:(NSString *)title  {
-    self.selectedBlock ? self.selectedBlock(shareScrollView.tag * self.itemsPerLine + index,title) : nil;
+    
+    self.selectedBlock ? self.selectedBlock(index,title) : nil;
 }
 
 
@@ -110,7 +111,7 @@
         
         shareScrollView = [[XMNShareScrollView alloc] initWithFrame:CGRectMake(0, self.lineView.frame.origin.y+self.lineView.frame.size.height, self.frame.size.width, [XMNShareScrollView heightForScrollView])];
         shareScrollView.shareDelegate = self;
-        shareScrollView.tag = 1;
+        shareScrollView.tag = self.itemsPerLine;
         [shareScrollView setupShareScrollViewWithItems:secondLineArray];
         shareScrollView.showsHorizontalScrollIndicator = NO;
         [self.itemsContentView addSubview:shareScrollView];
