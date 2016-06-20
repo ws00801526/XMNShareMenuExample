@@ -83,6 +83,16 @@
                           @{kXMNShareImage:@"more_icon_back",
                             kXMNShareTitle:@"返回首页"}];
     
+    
+    //分享媒介数据源
+    shareAry = @[@{kXMNShareImage:@"more_weixin",
+                            kXMNShareHighlightImage:@"more_weixin_highlighted",
+                            kXMNShareTitle:@"微信好友"},
+                          @{kXMNShareImage:@"more_circlefriends",
+                            kXMNShareHighlightImage:@"more_circlefriends_highlighted",
+                            kXMNShareTitle:@"朋友圈"},
+                          ];
+    
     //自定义头部
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 36)];
     headerView.backgroundColor = [UIColor clearColor];

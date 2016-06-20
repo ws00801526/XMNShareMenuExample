@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		978722CF1D06EDF800D61386 /* XMNShareAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978722CE1D06EDF800D61386 /* XMNShareAssets.xcassets */; };
 		97AE2A701C55D50800B72743 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE2A6F1C55D50800B72743 /* main.m */; };
 		97AE2A731C55D50800B72743 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE2A721C55D50800B72743 /* AppDelegate.m */; };
 		97AE2A761C55D50800B72743 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE2A751C55D50800B72743 /* ViewController.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		978722CE1D06EDF800D61386 /* XMNShareAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XMNShareAssets.xcassets; sourceTree = "<group>"; };
 		97AE2A6B1C55D50800B72743 /* XMNShareMenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMNShareMenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AE2A6F1C55D50800B72743 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97AE2A711C55D50800B72743 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				97AE2A881C55D5F300B72743 /* XMNShareView.m */,
 				97AE2A8A1C55D8DA00B72743 /* XMNShareScrollView.h */,
 				97AE2A8B1C55D8DA00B72743 /* XMNShareScrollView.m */,
+				978722CE1D06EDF800D61386 /* XMNShareAssets.xcassets */,
 			);
 			path = XMNShareMenu;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				978722CF1D06EDF800D61386 /* XMNShareAssets.xcassets in Resources */,
 				97AE2A7E1C55D50800B72743 /* LaunchScreen.storyboard in Resources */,
 				97AE2A8E1C55F0B100B72743 /* Assets.xcassets in Resources */,
 				97AE2A791C55D50800B72743 /* Main.storyboard in Resources */,
